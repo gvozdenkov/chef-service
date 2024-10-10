@@ -1,6 +1,6 @@
-# Sass Design System
+# Chef service
 
-Template to build robust and flexible design system for every frontend
+Test SASS design system on landing page
 
 ## Local dev
 
