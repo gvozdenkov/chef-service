@@ -1,0 +1,35 @@
+@use 'sass:map';
+
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'sizes' as *;
+
+@function clr($color...) {
+  $color: map.get($colors, $color...);
+
+  @if ($color != null) {
+    @return $color;
+  } @else {
+    @error 'This is not a key in a $colors map (/abstracts/_colors.scss)';
+  }
+}
+
+@function fs($font-size) {
+  $size: map.get($font-sizes, $font-size);
+
+  @if ($size != null) {
+    @return $size;
+  } @else {
+    @error 'This is not a key in a $font-sizes map (/abstracts/_typography.scss)';
+  }
+}
+
+@function size($size) {
+  $size: map.get($sizes, $size);
+
+  @if ($size != null) {
+    @return $size;
+  } @else {
+    @error 'This is not a key in a $sizes map (/abstracts/_sizes.scss)';
+  }
+}

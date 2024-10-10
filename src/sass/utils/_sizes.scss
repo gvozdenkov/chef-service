@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+@use 'sass:meta';
+
+@each $size-name, $size-value in $sizes {
+  .m {
+    &-#{$size-name} {
+      margin: $size-value;
+    }
+
+    &b-#{$size-name} {
+      margin-block: $size-value;
+    }
+    &b-start-#{$size-name} {
+      margin-block-start: $size-value;
+    }
+    &b-end-#{$size-name} {
+      margin-block-end: $size-value;
+    }
+
+    &i-#{$size-name} {
+      margin-inline: $size-value;
+    }
+    &i-start-#{$size-name} {
+      margin-inline-start: $size-value;
+    }
+    &i-end-#{$size-name} {
+      margin-inline-end: $size-value;
+    }
+  }
+
+  .p {
+    &-#{$size-name} {
+      padding: $size-value;
+    }
+
+    &b-#{$size-name} {
+      padding-block: $size-value;
+    }
+    &b-start-#{$size-name} {
+      padding-block-start: $size-value;
+    }
+    &b-end-#{$size-name} {
+      padding-block-end: $size-value;
+    }
+
+    &i-#{$size-name} {
+      padding-inline: $size-value;
+    }
+    &i-start-#{$size-name} {
+      padding-inline-start: $size-value;
+    }
+    &i-end-#{$size-name} {
+      padding-inline-end: $size-value;
+    }
+  }
+}
