@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.section-title {
+  & h2 {
+    font-family: $ff-accent;
+  }
+
+  &:has(p) {
+    margin-block-end: size(36);
+    line-height: 1.2;
+
+    // add margin bottom for h2 if <p> exists
+    & h2 {
+      margin-block-end: 1.3rem;
+    }
+  }
+
+  // section-title without <p> subtitle
+  &:not(:has(p)) {
+    margin-block-end: size(36) * 2.5;
+  }
+
+  // section title with <p> subtitle & rule
+  &_with-decoration {
+    &::after {
+      content: '';
+      display: flex;
+      height: 1px;
+      width: 10rem;
+      background-color: currentColor;
+      margin-block: size(36);
+
+      .text-center & {
+        margin-inline: auto;
+      }
+    }
+  }
+}

@@ -1,5 +1,16 @@
 @use '../abstracts/' as *;
-@use 'sass:meta';
+
+.section {
+  padding-block: $section-padding;
+}
+
+.hero {
+  padding-block: $hero-padding;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
 
 @each $size-name, $size-value in $sizes {
   .m {
