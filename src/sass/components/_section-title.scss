@@ -1,10 +1,6 @@
 @use '../abstracts/' as *;
 
 .section-title {
-  & h2 {
-    font-family: $ff-accent;
-  }
-
   &:has(p) {
     margin-block-end: size(36);
     line-height: 1.2;
@@ -24,7 +20,7 @@
   &_with-decoration {
     &::after {
       content: '';
-      display: flex;
+      display: block;
       height: 1px;
       width: 10rem;
       background-color: currentColor;

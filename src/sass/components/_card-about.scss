@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.card-about {
+  display: grid;
+  text-align: center;
+  
+  &__body {
+    padding: $card-body-padding;
+  }
+}
