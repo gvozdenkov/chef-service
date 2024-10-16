@@ -5,17 +5,18 @@
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: $fw-700;
   line-height: 1;
   border: 0;
   padding: 1.125em 2em;
 
-  transition: ease-out 250ms;
+  transition: ease-out 200ms;
 
   &_accent {
     color: clr(neutral, 900);
     background-color: clr(accent, 400);
 
-    &:hover {
+    &:is(:hover, :focus) {
       background-color: clr(accent, 500);
     }
   }
@@ -28,8 +29,9 @@
     outline: var(--outline-size) solid clr(neutral, 100);
     outline-offset: calc(var(--outline-size) * -1);
 
-    &:hover {
-      outline-color: clr(accent, 500);
+    &:is(:hover, :focus) {
+      color: clr(neutral, 900);
+      background-color: clr(neutral, 100);
     }
   }
 }

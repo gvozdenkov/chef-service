@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.primary-nav {
+  a {
+    color: clr(neutral, 100);
+    font-family: $ff-accent;
+    font-size: fs(700);
+    transition: ease-out 250ms;
+
+    &:is(:hover, :focus) {
+      color: clr(accent, 400);
+    }
+  }
+}
