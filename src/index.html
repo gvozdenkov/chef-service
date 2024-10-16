@@ -14,17 +14,20 @@
     <title>Chef landing</title>
   </head>
   <body>
-    <header class="primary-header | bg-neutral-900 mb-start-24">
+    <header class="primary-header | mb-start-24">
       <img class="logo | mx-auto" src="/assets/logo.svg" alt="Chef John Wellington" />
       <nav class="primary-nav">
-        <ul class="flex-group mx-auto ff-accent mb-start-24 fs-700" style="--flex-gap: 49px">
-          <li><a class="clr-neutral-100" href="#about">About</a></li>
-          <li><a class="clr-neutral-100" href="#meals">Meals</a></li>
-          <li><a class="clr-neutral-100" href="#testimonials">Testimonials</a></li>
+        <ul
+          class="flex-group mx-auto mb-start-24"
+          style="--flex-column-gap: 49px; --flex-row-gap: 0"
+        >
+          <li><a href="#about">About</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
         </ul>
       </nav>
     </header>
-    <section class="hero | bg-neutral-900 clr-neutral-100 text-center">
+    <section class="hero | hero-section bg-neutral-900 clr-neutral-100 text-center">
       <div class="container">
         <h1 class="fs-900 ff-accent">Homecooked meals delivered straight to your door</h1>
         <div class="flex-group mx-auto mb-start-48">
@@ -41,7 +44,7 @@
               <source srcset="./assets/about.avif" type="image/avif" />
               <source srcset="./assets/about.webp" type="image/webp" />
               <img
-                class="shift-up box-shadow-1"
+                class="w-full shift-up box-shadow-1"
                 src="./assets/about.jpg"
                 alt="Top view of a table with plates of delicacies."
               />
@@ -49,9 +52,11 @@
           </div>
           <div class="flow">
             <header class="section-title">
-              <h2 class="fs-800 ff-accent clr-accent-500" id="welcome">We make great food</h2>
+              <h2 class="fs-800 ff-accent clr-accent-500" id="welcome">
+                Amazing food without the hassle
+              </h2>
               <p class="fs-600 uppercase">
-                Cooking is our passion, with quality and freshness being of the utmost importance
+                We do all the work, so all you have to do is sit back and enjoy
               </p>
             </header>
 
@@ -70,10 +75,10 @@
       </div>
     </section>
 
-    <section class="section | bg-neutral-200 text-center" aria-labelledby="meals">
+    <section class="section | bg-neutral-200 text-center" aria-labelledby="features">
       <div class="container">
         <header class="section-title section-title_with-decoration">
-          <h2 class="fs-800 ff-accent clr-accent-500" id="meals">We make great food</h2>
+          <h2 class="fs-800 ff-accent clr-accent-500" id="features">We make great food</h2>
           <p class="fs-600 uppercase">
             Cooking is our passion, with quality and freshness being of the utmost importance
           </p>
@@ -111,49 +116,59 @@
       </div>
     </section>
 
-    <section class="section | bg-neutral-900 text-center" aria-labelledby="testimonials">
+    <section class="section section_meals | bg-neutral-900 text-center" aria-labelledby="meals">
       <div class="container container_wide">
         <header class="section-title section-title_with-decoration | clr-neutral-100">
-          <h2 class="fs-800 ff-accent" id="testimonials">Some of our meals</h2>
+          <h2 class="fs-800 ff-accent" id="meals">Some of our meals</h2>
           <p class="fs-600 uppercase">
             Here are a few of our delicious, home-cooked meals that are sure to please your taste
             buds.
           </p>
         </header>
         <div class="grid-auto-fit pb-start-12">
-          <div>
+          <figure class="interacitve-figure | clr-neutral-100">
             <picture>
               <source srcset="./assets/meal-01.avif" type="image/avif" />
               <source srcset="./assets/meal-01.webp" type="image/webp" />
-              <img
-                class="shift-up box-shadow-1"
-                src="./assets/meal-01.jpg"
-                alt="Plate with delicacie."
-              />
+              <img class="" src="./assets/meal-01.jpg" alt="Plate with delicacie." />
             </picture>
-          </div>
-          <div>
+            <figcaption class="p-32">
+              <h3 class="fs-500 fw-bold uppercase">Pan-seared salmon and veges</h3>
+              <p>A pan-seared salmon filet served on top of a giant bed of delicious vegetables</p>
+            </figcaption>
+          </figure>
+
+          <!-- 2nd -->
+
+          <figure class="interacitve-figure | clr-neutral-100">
             <picture>
               <source srcset="./assets/meal-02.avif" type="image/avif" />
               <source srcset="./assets/meal-02.webp" type="image/webp" />
-              <img
-                class="shift-up box-shadow-1"
-                src="./assets/meal-02.jpg"
-                alt="Pita with meat and vegetables."
-              />
+              <img class="" src="./assets/meal-02.jpg" alt="Steak Taco with meat and vegetables." />
             </picture>
-          </div>
-          <div>
+            <figcaption class="p-32">
+              <h3 class="fs-500 fw-bold uppercase">Steak Tacos</h3>
+              <p>Delicious rib-eye steak tacos served with chimichurri and fresh limes</p>
+            </figcaption>
+          </figure>
+
+          <!-- 3d -->
+
+          <figure class="interacitve-figure | clr-neutral-100">
             <picture>
               <source srcset="./assets/meal-03.avif" type="image/avif" />
               <source srcset="./assets/meal-03.webp" type="image/webp" />
               <img
-                class="shift-up box-shadow-1"
+                class=""
                 src="./assets/meal-03.jpg"
                 alt="Mussels are tossed around in the pan while cooking."
               />
             </picture>
-          </div>
+            <figcaption class="p-32">
+              <h3 class="fs-500 fw-bold uppercase">Seafood platter</h3>
+              <p>A seafood platter like you've never prepared before</p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -161,16 +176,22 @@
     <section class="section | text-center" aria-labelledby="about">
       <div class="container container_wide">
         <header class="section-title">
-          <h2 class="fs-800 clr-accent-500 ff-accent" id="about">Some of our meals</h2>
+          <h2 class="fs-800 clr-accent-500 ff-accent" id="about">
+            What our clients are saying about us
+          </h2>
         </header>
         <div class="grid-auto-fit">
-          <article class="card-about | box-shadow-1">
+          <article
+            class="quote-card | box-shadow-1"
+            title="Testimonial from John Deer"
+            aria-label="Testimonial from John Deer"
+          >
             <picture>
               <source srcset="./assets/testimonial-01.avif" type="image/avif" />
               <source srcset="./assets/testimonial-01.webp" type="image/webp" />
-              <img class="" src="./assets/testimonial-01.jpg" alt="Plate with delicacie." />
+              <img class="" src="./assets/testimonial-01.jpg" alt="John Deer portrait." />
             </picture>
-            <div class="card-about__body">
+            <div class="quote-card__body">
               <p>
                 John Wellington and his team make the most amazing food. Every single time I’ve
                 ordered, I’ve been blown-away by the quality. You can tell they only use fresh
@@ -183,13 +204,20 @@
               <p>Lover of good food</p>
             </footer>
           </article>
-          <article class="card-about | box-shadow-1">
+
+          <!-- 2nd -->
+
+          <article
+            class="quote-card | box-shadow-1"
+            title="Testimonial from Marie Cond"
+            aria-label="Testimonial from Marie Cond"
+          >
             <picture>
               <source srcset="./assets/testimonial-02.avif" type="image/avif" />
               <source srcset="./assets/testimonial-02.webp" type="image/webp" />
-              <img class="" src="./assets/testimonial-02.jpg" alt="Plate with delicacie." />
+              <img class="" src="./assets/testimonial-02.jpg" alt="Marie Condo portrait." />
             </picture>
-            <div class="card-about__body">
+            <div class="quote-card__body">
               <p>
                 I’m so happy that I found John Wellington! The food is on par with some of the best
                 restaurants I’ve ever eaten at, but from the comfort of my own home. Every single
@@ -201,13 +229,20 @@
               <p>Foodie</p>
             </footer>
           </article>
-          <article class="card-about | box-shadow-1">
+
+          <!-- 3d -->
+
+          <article
+            class="quote-card | box-shadow-1"
+            title="Testimonial from Sam Reinhert"
+            aria-label="Testimonial from Sam Reinhert"
+          >
             <picture>
               <source srcset="./assets/testimonial-03.avif" type="image/avif" />
               <source srcset="./assets/testimonial-03.webp" type="image/webp" />
-              <img class="" src="./assets/testimonial-03.jpg" alt="Plate with delicacie." />
+              <img class="" src="./assets/testimonial-03.jpg" alt="Sam Reinhert portrait." />
             </picture>
-            <div class="card-about__body">
+            <div class="quote-card__body">
               <p>
                 From simple meals to some of the most extravagant things I’ve ever eaten, John and
                 his team always deliver. Every time I order something new, I just can’t wait for it
