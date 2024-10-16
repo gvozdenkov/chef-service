@@ -3,5 +3,9 @@
 @each $font-name, $font-value in $font-sizes {
   .fs-#{$font-name} {
     font-size: $font-value;
+
+    @if ($font-name > 600) {
+      line-height: 1.13;
+    }
   }
 }

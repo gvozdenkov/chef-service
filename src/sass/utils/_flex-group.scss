@@ -3,6 +3,11 @@
 .flex-group {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--flex-gap, $flex-gap);
+  column-gap: var(--flex-column-gap, $flex-gap);
+  row-gap: var(--flex-row-gap, $flex-gap / 2);
   width: fit-content;
+
+  &.mx-auto {
+    justify-content: center;
+  }
 }

@@ -6,13 +6,13 @@ $ff-accent: $ff-abril;
 
 $font-sizes: (
   // 80px
-  900: 5rem,
+  900: clamp(2.5rem, 10vw, 5rem),
   // 60px
-  800: 3.75rem,
+  800: clamp(1.875rem, 7vw, 3.75rem),
   // 32px
-  700: 2rem,
+  700: clamp(1.4rem, 6vw, 2rem),
   // 27px
-  600: 1.6875rem,
+  600: clamp(1.3rem, 3vw, 1.6875rem),
   // 21px
   500: 1.3125rem,
   // 18px

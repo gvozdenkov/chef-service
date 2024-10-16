@@ -4,12 +4,16 @@
   padding-block: $section-padding;
 }
 
-.hero {
+.hero-section {
   padding-block: $hero-padding;
 }
 
 .mx-auto {
   margin-inline: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 @each $size-name, $size-value in $sizes {
