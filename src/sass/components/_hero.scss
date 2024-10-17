@@ -1,8 +1,8 @@
 .hero {
   background: center / cover no-repeat;
   background-image: image-set(
-    url(../../assets/hero-bg.avif) type('image/avif'),
-    url(../../assets/hero-bg.webp) type('image/webp'),
-    url(../../assets/hero-bg.jpg) type('image/jpg')
+    url(/assets/hero-bg.avif) type('image/avif'),
+    url(/assets/hero-bg.webp) type('image/webp'),
+    url(/assets/hero-bg.jpg) type('image/jpg')
   );
 }
