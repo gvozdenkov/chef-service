@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import htmlPurge from 'vite-plugin-purgecss';
 
 export default defineConfig({
   base: '/chef-service',
@@ -11,8 +12,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        api: 'modern-compiler', // or "modern"
+        api: 'modern',
       },
     },
   },
+  plugins: [htmlPurge()],
 });
